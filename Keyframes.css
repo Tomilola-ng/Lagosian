@@ -1,0 +1,23 @@
+/* Landing text animation */
+@keyframes landtext {
+  to {
+  content: 'Èkó òni bààjè óó';
+ }
+}
+@keyframes leftin {
+  0% {  left: -400px;  }
+  20% {  left: -320px;  }
+  40% {  left: -240px;  }
+  60% {  left: -160px;  }
+  80% {  left: -80px;  }
+}
+@keyframes rightin {
+  from {
+    opacity: 0;
+  }
+  /*  0% {  right: -400px;  }
+  20% {  right: -320px;  }
+  40% {  right: -240px;  }
+  60% {  right: -160px;  }
+  80% {  right: -80px;  }*/
+}

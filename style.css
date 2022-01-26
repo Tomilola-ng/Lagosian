@@ -1,0 +1,70 @@
+/* landing page */
+.land {
+ width:100%;
+ height: 120vh; max-height: 400px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+ overflow: hidden;
+}
+.landiv, .imgbox {
+ width: 400px;
+ min-height: 200px; max-height: 300px;
+}.landiv .btn {
+  display: block;
+  text-align: center ;
+  width: 150px;
+  margin: 5px auto;
+  animation: rightin 2.5s 1 linear;
+}.landiv {
+ margin: 5px;
+}
+.landiv::before {
+ content: 'Our father\'s land';
+ position: relative;
+ width: 100%;
+ display: block;
+ text-align: center;
+ font-weight:600; font-size: var(--xlg);
+ color: #F9A826;
+ /*text-shadow: var(--text);*/
+ animation: landtext 10s infinite linear , leftin .7s 1 linear;
+}
+.landiv .etext {
+  text-align: center;
+}
+.imgbox {
+  box-shadow: var(--box-alt);
+  transform: translateY(-5%);
+}
+.overlay {
+  background: rgb(0,0,0,0.3);
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+.more {
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+  position: absolute;
+  background: url('/image/more1.jpg') no-repeat bottom center/cover;
+  background-attachment: fixed;
+  z-index: -1;
+  text-align: center;
+}
+.more h1 {
+  color: var(--main-color); 
+  font-size: var(--lg);
+}
+.arc {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(45deg, transparent 50%, #F9A826 95%, gold);;
+  pointer-events: none;
+  top: 20%; left: 0;
+  border-radius: 50% ;
+  z-index: -5;
+}
